@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="BOT_SpotSensor.ServiceParkingSpots" CodeBehind="ServiceParkingSpots.svc.cs" %>

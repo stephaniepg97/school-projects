@@ -1,0 +1,10 @@
+C:\Users\Stephanie\Documents\IS-Projeto\Project\ParkTU2\bin\Debug\ParkTU2.exe.config
+C:\Users\Stephanie\Documents\IS-Projeto\Project\ParkTU2\bin\Debug\ParkTU2.exe
+C:\Users\Stephanie\Documents\IS-Projeto\Project\ParkTU2\bin\Debug\ParkTU2.pdb
+C:\Users\Stephanie\Documents\IS-Projeto\Project\ParkTU2\obj\Debug\ParkTU2.csprojAssemblyReference.cache
+C:\Users\Stephanie\Documents\IS-Projeto\Project\ParkTU2\obj\Debug\ParkTU2.csproj.CoreCompileInputs.cache
+C:\Users\Stephanie\Documents\IS-Projeto\Project\ParkTU2\obj\Debug\ParkTU2.exe
+C:\Users\Stephanie\Documents\IS-Projeto\Project\ParkTU2\obj\Debug\ParkTU2.pdb
+C:\Users\Stephanie\Documents\IS-Projeto\Project\ParkTU2\bin\Debug\M2Mqtt.Net.dll
+C:\Users\Stephanie\Documents\IS-Projeto\Project\ParkTU2\bin\Debug\M2Mqtt.Net.pdb
+C:\Users\Stephanie\Documents\IS-Projeto\Project\ParkTU2\obj\Debug\ParkTU2.csproj.CopyComplete

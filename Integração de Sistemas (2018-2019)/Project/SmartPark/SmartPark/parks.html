@@ -1,0 +1,482 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Parks API</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <div>
+        <h2>
+            <font face="Verdana" color="green">List of all Parks:</font> <br />
+        </h2>
+        <input id="buttonList1" type="button" value="Pesquisar" onclick="findAll();" />
+        <ul id="parks" />
+    </div>
+
+    <button type="button" onclick="showHide('parks', 'buttonList1')">Esconder/Mostrar lista de Parks</button>
+
+
+    <div>
+        <h3>
+            <font face="Verdana" color="blue">Informação detalhada de um determinado Park com um ID específico:</font>
+        </h3>
+        <font face="Verdana" color="black"> ID: </font>
+        <input type="text" id="parkid" size="5" /> <br />
+        <input type="button" value="Pesquisar" onclick="findByIDDetail();" />
+        <ul id="parkIdDetail" />
+    </div>
+
+    <div>
+        <h3>
+            <font face="Verdana" color="blue">Informação detalhada de um determinado Park com um dado nome específico:</font>
+        </h3>
+        <font face="Verdana" color="black"> Nome: </font>
+        <input type="text" id="parkName" size="5" /> <br />
+        <input type="button" value="Pesquisar" onclick="findByNameDetail();" />
+        <ul id="parkNameDetail" />
+    </div>
+
+    <div>
+        <h3>
+            <font face="Verdana" color="blue">Estado de ocupação de todos os Parking Spots pertencentes a um Park (ID) num dado momento:</font>
+        </h3>
+        <font face="Verdana" color="black"> ID: </font>
+        <input type="text" id="parkId" size="5" /> <br />
+        <font face="Verdana" color="black"> TimeStamp: </font>
+        <input type="datetime" id="parksTimeStamp" size="18" placeholder="yyyy-mm-ddThh:mi:ss" />
+        <input type="button" value="Pesquisar" onclick="findByIDTimeStamp();" />
+        <ul id="parkIDTimeStamp" />
+    </div>
+
+    <div>
+        <h3>
+            <font face="Verdana" color="blue">Estado de ocupação de todos os Parking Spots pertencentes a um Park (por Nome) num dado Período de Tempo:</font>
+        </h3>
+        <font face="Verdana" color="black"> Nome: </font>
+        <input type="text" id="parkName1" size="5" /> <br />
+        <font face="Verdana" color="black"> TimeStamp Inicial: </font>
+        <input type="datetime" id="timeStampBegin" size="18" placeholder="yyyy-mm-ddThh:mi:ss" /> <br />
+        <font face="Verdana" color="black"> TimeStamp Final: </font>
+        <input type="datetime" id="timeStampEnd" size="18" placeholder="yyyy-mm-ddThh:mi:ss" />
+        <input type="button" value="Pesquisar" onclick="findByIDPeriodTime();" />
+        <ul id="parkIDPeriodTime" />
+    </div>
+
+    <div>
+        <h3>
+            <font face="Verdana" color="blue">Estado de ocupação de todos os Parking Spots pertencentes a um Park (por Nome) num dado momento:</font>
+        </h3>
+        <font face="Verdana" color="black"> Nome: </font>
+        <input type="text" id="parkName2" size="5" /> <br />
+        <font face="Verdana" color="black"> TimeStamp: </font>
+        <input type="datetime" id="parksTimeStampName" size="18" placeholder="yyyy-mm-ddThh:mi:ss" />
+        <input type="button" value="Pesquisar" onclick="findByNameTimeStamp();" />
+        <ul id="parkNameTimeStamp" />
+    </div>
+
+    <div>
+        <h3>
+            <font face="Verdana" color="blue">Estado de ocupação de todos os Parking Spots pertencentes a um Park (ID) num dado Período de Tempo:</font>
+        </h3>
+        <font face="Verdana" color="black"> Nome: </font>
+        <input type="text" id="parkName2" size="5" /> <br />
+        <font face="Verdana" color="black"> TimeStamp Inicial: </font>
+        <input type="datetime" id="timeStampBeginName" size="18" placeholder="yyyy-mm-ddThh:mi:ss" /> <br />
+        <font face="Verdana" color="black"> TimeStamp Final: </font>
+        <input type="datetime" id="timeStampEndName" size="18" placeholder="yyyy-mm-ddThh:mi:ss" />
+        <input type="button" value="Pesquisar" onclick="findByNamePeriodTime();" />
+        <ul id="parkPeriodTimeName" />
+    </div>
+
+    <div>
+        <h3>
+            <font face="Verdana" color="blue">Lista de todos os Parking Spots livres pertencentes a um Park (ID) num dado momento:</font>
+        </h3>
+        <font face="Verdana" color="black"> ID: </font>
+        <input type="text" id="parkID" size="5" /> <br />
+        <font face="Verdana" color="black"> TimeStamp: </font>
+        <input type="datetime" id="parkTimeStamp" size="18" placeholder="yyyy-mm-ddThh:mi:ss" />
+        <input type="button" value="Pesquisar" onclick="findByIDTimeStampFree();" />
+        <ul id="parkIDTimeStampFree" />
+    </div>
+
+    <div>
+        <h3>
+            <font face="Verdana" color="blue">Lista de todos os Parking Spots livres pertencentes a um Park (por Nome) num dado momento:</font>
+        </h3>
+        <font face="Verdana" color="black"> Nome: </font>
+        <input type="text" id="parkName5" size="5" /> <br />
+        <font face="Verdana" color="black"> TimeStamp: </font>
+        <input type="datetime" id="parkTimeStampFreeName" size="18" placeholder="yyyy-mm-ddThh:mi:ss" />
+        <input type="button" value="Pesquisar" onclick="findByNameTimeStampFree();" />
+        <ul id="parkNameTimeStampFree" />
+    </div>
+
+    <div>
+        <h3>
+            <font face="Verdana" color="blue">Lista de todos os sensores de Parking Spots que necessitam de serem substituídos num determinado Park (ID):</font>
+        </h3>
+        <font face="Verdana" color="black"> ID: </font>
+        <input type="text" id="ParkID" size="5" /> <br />
+        <input type="button" value="Pesquisar" onclick="findByIDNeedReplace();" />
+        <ul id="parkIDNeedReplace" />
+    </div>
+
+    <div>
+        <h3>
+            <font face="Verdana" color="blue">Lista de todos os sensores de Parking Spots que necessitam de serem substituídos num determinado Park (por Nome):</font>
+        </h3>
+        <font face="Verdana" color="black"> Nome: </font>
+        <input type="text" id="parkName3" size="5" /> <br />
+        <input type="button" value="Pesquisar" onclick="findByNameNeedReplace();" />
+        <ul id="parkNameNeedReplace" />
+    </div>
+
+    <div>
+        <h2>
+            <font face="Verdana" color="green">Lista de todos os Parking Spots pertencentes a um Park (ID):</font>
+        </h2>
+        <font face="Verdana" color="black"> ID: </font>
+        <input type="text" id="parksID" size="5" /> <br />
+        <input id="buttonList2" type="button" value="Pesquisar" onclick="findByID();" />
+        <ul id="parksPS" />
+    </div>
+
+    <button type="button" onclick="showHidePlusSearch('parksPS', 'buttonList2')">Esconder/Mostrar lista dos Parking Spots pertencentes ao Park com este Id</button>
+
+    <div>
+        <h2>
+            <font face="Verdana" color="green">Lista de todos os Parking Spots pertencentes a um Park (por Nome):</font>
+        </h2>
+        <font face="Verdana" color="black"> Nome: </font>
+        <input type="text" id="parkName4" size="5" /> <br />
+        <input id="buttonList3" type="button" value="Pesquisar" onclick="findByName();" />
+        <ul id="parksByName" />
+    </div>
+
+    <button type="button" onclick="showHidePlusSearch('parksByName', 'buttonList3')">Esconder/Mostrar lista dos Parking Spots pertencentes ao Park com este nome</button>
+
+    <div>
+        <h3>
+            <font face="Verdana" color="blue">Ocupação de um determinado parque(ID):</font>
+        </h3>
+        <font face="Verdana" color="black"> ID: </font>
+        <input type="text" id="idPark" size="5" /> <br />
+        <input type="button" value="Pesquisar" onclick="getCurrentUsage();" />
+        <ul id="currentLoad" />
+    </div>
+
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.4.min.js"></script>
+    <script>
+        var uri = 'http://localhost:49601/api';
+        $(document).ready(function () {
+            $.get(uri + '/parks').done(function (data) {
+                alert(JSON.stringify(data));
+            })
+                .fail(function (jqxhr, textStatus, error) {
+                    var err = textStatus + ", " + error;
+                    alert("Request failed: " + err);
+                });
+        });
+
+        function formatItem(item) {
+            return "ID: " + item.Id + ", Name: " + item.Name;
+        }
+
+        function formatItem1(item) {
+            return " Parking Spot ID: " + item.Id + ", Spot ID:  " + item.SpotId + "=> " + "Status: Occupied? " + JSON.stringify(item.Status.Value);
+        }
+
+        function formatItem3(item) {
+            return " Parking Spot ID: " + item.Id + ", Spot ID:  " + item.SpotId + "=> " + "Battery Critical Level? " + JSON.stringify(item.BatteryStatus);
+        }
+
+        function formatItem2(item) {
+            return " Parking Spot ID: " + item.Id + ", Spot ID:  " + item.SpotId;
+        }
+
+        function formatItemDetail(item) {
+            return "ID: " + item.Id + ", Name: " + item.Name + ", Description: " + item.Description + ", Number Of Spots: " + item.NumberOfSpots +
+                ", Operating Hours: " + item.OperatingHours + ", Number Of Special Spots: " + item.NumberOfSpecialSpots + ", Location File: " + item.GeoLocationFile;
+        }
+
+        function formatItemRate(item) {
+            return "Taxa de ocupação: " + item;
+        }
+
+
+        function showHide(el, button) {
+            var display = document.getElementById(el).style.display;
+            var button = document.getElementById(button);
+            if (display != "none")
+                document.getElementById(el).style.display = 'none';
+            else
+                document.getElementById(el).style.display = 'block';
+            button.disable = true;
+            button.value = 'INATIVO'
+            button.style.color = 'red';
+
+        }
+
+        function showHidePlusSearch(el, button) {
+            var display = document.getElementById(el).style.display;
+            var button = document.getElementById(button);
+            if (display != "none")
+                document.getElementById(el).style.display = 'none';
+            else
+                document.getElementById(el).style.display = 'block';
+            button.disable = false;
+            button.value = 'PESQUISAR POR OUTRO PARK'
+            button.style.color = 'green';
+
+        }
+
+        function findAll() {
+            $('#parks').empty();
+
+            $.get(uri + '/parks')
+                .done(function (data) {
+                    $.each(data, function (key, item) {
+                        //ADD a list item for the parkingSpot
+                        $('<li>', { text: formatItem(item) }).appendTo($('#parks'));
+                    });
+                })
+                .fail(function (jqxhr, textStatus, error) {
+                    var err = textStatus + ", " + error;
+                    alert("Request failed: " + err);
+                });
+        }
+
+
+        function findByIDTimeStamp() {
+            var timeStamp = $('#parksTimeStamp').val();
+            var id = $('#parkId').val();
+            $('#parkIDTimeStamp').empty();
+
+
+            $.getJSON(uri + '/parks/' + id + '/parkingSpots?timestamp=' + timeStamp)
+                .done(function (data) {
+                    $.each(data, function (key, item) {
+                        $('<li>', { text: formatItem1(item) }).appendTo($('#parkIDTimeStamp'));
+                    });
+
+                })
+                .fail(function (jqxhr, textStatus2, error) {
+                    var err = textStatus2 + ", " + error;
+                    alert("request failed! : ", err);
+                });
+        }
+
+        function findByNameTimeStamp() {
+            var timeStamp = $('#parksTimeStampName').val();
+            var name = $('#parkName2').val();
+            $('#parkNameTimeStamp').empty();
+
+
+            $.getJSON(uri + '/parks/' + name + '/parkingSpots?timestamp=' + timeStamp)
+                .done(function (data) {
+                    $.each(data, function (key, item) {
+                        $('<li>', { text: formatItem1(item) }).appendTo($('#parkNameTimeStamp'));
+                    });
+
+                })
+                .fail(function (jqxhr, textStatus2, error) {
+                    var err = textStatus2 + ", " + error;
+                    alert("request failed! : ", err);
+                });
+        }
+
+        function findByIDNeedReplace() {
+            var id = $('#ParkID').val();
+            $('#parkIDNeedReplace').empty();
+
+            $.get(uri + '/parks/' + id + '/parkingSpots?batteryStatus=false')
+                .done(function (data) {
+                    $.each(data, function (key, item) {
+                        //ADD a list
+                        $('<li>', { text: formatItem3(item) }).appendTo($('#parkIDNeedReplace'));
+                    });
+                })
+                .fail(function (jqxhr, textStatus, error) {
+                    var err = textStatus + ", " + error;
+                    alert("Request failed: " + err);
+                });
+        }
+
+        function findByNameNeedReplace() {
+            var name = $('#parkName3').val();
+            $('#parkNameNeedReplace').empty();
+
+            $.get(uri + '/parks/' + name + '/parkingSpots?batteryStatus=false')
+                .done(function (data) {
+                    $.each(data, function (key, item) {
+                        //ADD a list
+                        $('<li>', { text: formatItem3(item) }).appendTo($('#parkNameNeedReplace'));
+                    });
+                })
+                .fail(function (jqxhr, textStatus, error) {
+                    var err = textStatus + ", " + error;
+                    alert("Request failed: " + err);
+                });
+        }
+
+        function findByIDPeriodTime() {
+            var begin = $('#timeStampBegin').val();
+            var end = $('#timeStampEnd').val();
+            var id = $('#parksId').val();
+            $('#parkIDPeriodTime').empty();
+
+            $.getJSON(uri + '/parks/' + id + '/parkingSpots?begin=' + begin + '&end=' + end)
+                .done(function (data) {
+                    $.each(data, function (key, item) {
+                        $('<li>', { text: formatItem1(item) }).appendTo($('#parkIDPeriodTime'));
+                    });
+
+                })
+                .fail(function (jqxhr, textStatus2, error) {
+                    var err = textStatus2 + ", " + error;
+                    alert("request failed! : ", err);
+                });
+        }
+
+        function findByNamePeriodTime() {
+            var begin = $('#timeStampBeginName').val();
+            var end = $('#timeStampEndName').val();
+            var name = $('#parkName2').val();
+            $('#parkPeriodTimeName').empty();
+
+            $.getJSON(uri + '/parks/' + name + '/parkingSpots?begin=' + begin + '&end=' + end)
+                .done(function (data) {
+                    $.each(data, function (key, item) {
+                        $('<li>', { text: formatItem1(item) }).appendTo($('#parkPeriodTimeName'));
+                    });
+
+                })
+                .fail(function (jqxhr, textStatus2, error) {
+                    var err = textStatus2 + ", " + error;
+                    alert("request failed! : ", err);
+                });
+        }
+
+        function findByIDTimeStampFree() {
+            var timeStamp = $('#parkTimeStamp').val();
+            var id = $('#parkID').val();
+            $('#parkIDTimeStampFree').empty();
+
+
+            $.getJSON(uri + '/parks/' + id + '/parkingSpots/free?timestamp=' + timeStamp)
+                .done(function (data) {
+                    $.each(data, function (key, item) {
+                        $('<li>', { text: formatItem1(item) }).appendTo($('#parkIDTimeStampFree'));
+                    });
+
+                })
+                .fail(function (jqxhr, textStatus2, error) {
+                    var err = textStatus2 + ", " + error;
+                    alert("request failed! : ", err);
+                });
+        }
+
+        function findByNameTimeStampFree() {
+            var timeStamp = $('#parkTimeStampFreeName').val();
+            var name = $('#parkName5').val();
+            $('#parkNameTimeStampFree').empty(); 
+
+
+            $.getJSON(uri + '/parks/' + name + '/parkingSpots/free?timestamp=' + timeStamp)
+                .done(function (data) {
+                    $.each(data, function (key, item) {
+                        $('<li>', { text: formatItem1(item) }).appendTo($('#parkNameTimeStampFree'));
+                    });
+
+                })
+                .fail(function (jqxhr, textStatus2, error) {
+                    var err = textStatus2 + ", " + error;
+                    alert("request failed! : ", err);
+                });
+        }
+
+        function findByID() {
+            var id = $('#parksID').val();
+            $('#parksPS').empty();
+
+            $.get(uri + '/parks/' + id + '/parkingSpots')
+                .done(function (data) {
+                    $.each(data, function (key, item) {
+                        //ADD a list item for the parkingSpot
+                        $('<li>', { text: formatItem2(item) }).appendTo($('#parksPS'));
+                    });
+                })
+                .fail(function (jqxhr, textStatus, error) {
+                    var err = textStatus + ", " + error;
+                    alert("Request failed: " + err);
+                });
+        }
+
+        function findByName() {
+            var name = $('#parkName4').val();
+            $('#parksByName').empty();
+
+            $.get(uri + '/parks/' + name + '/parkingSpots')
+                .done(function (data) {
+                    $.each(data, function (key, item) {
+                        //ADD a list item for the parkingSpot
+                        $('<li>', { text: formatItem2(item) }).appendTo($('#parksByName'));
+                    });
+                })
+                .fail(function (jqxhr, textStatus, error) {
+                    var err = textStatus + ", " + error;
+                    alert("Request failed: " + err);
+                });
+        }
+
+        function getCurrentUsage() {
+            var id = $('#idPark').val();
+            $('#currentLoad').empty();
+
+            $.get(uri + '/parks/' + id + '/occupancy')
+                .done(function (data) {
+                    $('#currentLoad').text(formatItemRate(data));
+                })
+                .fail(function (jqxhr, textStatus, error) {
+                    var err = textStatus + ", " + error;
+                    alert("Request failed: " + err);
+                });
+        }
+
+        function findByNameDetail() {
+            var name = $('#parkName').val();
+            $('#parkNameDetail').empty();
+
+            $.get(uri + '/parks/' + name)
+                .done(function (data) {
+                    $.each(data, function (key, item) {
+                        //get first item
+                        $('#parkNameDetail').text(formatItemDetail(item));
+                    });                })
+                .fail(function (jqxhr, textStatus2, error) {
+                    var err = textStatus2 + ", " + error;
+                    alert("request failed! : ", err);
+                });
+        }
+
+        function findByIDDetail() {
+            var id = $('#parkid').val();
+            $('#parkIdDetail').empty();
+
+            $.get(uri + '/parks/' + id)
+                .done(function (data) {
+                    $('#parkIdDetail').text(formatItemDetail(data));
+                })
+                .fail(function (jqxhr, textStatus2, error) {
+                    var err = textStatus2 + ", " + error;
+                    alert("request failed! : ", err);
+                });
+        }
+
+    </script>
+    <br />
+    <br />
+    <a href="index.html">Voltar Atrás</a>
+</body>
+</html>

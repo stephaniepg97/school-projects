@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="parks" type="parksType"/>
+
+  <xs:complexType name="parksType">
+    <xs:sequence>
+      <xs:element name="parkInfo" type="parkInfoType" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+  
+  <xs:complexType name="parkingSpotType">
+    <xs:sequence>
+      <xs:element name="type" type="typeType" minOccurs="1"/>
+      <xs:element name="name" type="xs:string" minOccurs="1"/>
+      <xs:element name="location" type="xs:string" />
+      <xs:element name="status" type="statusType" minOccurs="1"/>
+      <xs:element name="batteryStatus" type="xs:boolean" minOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="parkInfoType">
+    <xs:sequence>
+      <xs:element name="id" type="xs:string" minOccurs="1"/>
+      <xs:element name="description" type="xs:string" minOccurs="1"/>
+      <xs:element name="numberOfSpots" type="xs:unsignedShort" minOccurs="1"/>
+      <xs:element name="operatingHours" type="xs:string" minOccurs="1"/>
+      <xs:element name="numberOfSpecialSpots" type="xs:unsignedShort" minOccurs="1"/>
+      <xs:element name="geoLocationFile" type="xs:string" minOccurs="1"/>
+      <xs:element name="parkingSpots" type="parkingSpotsType" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="parkingSpotsType">
+    <xs:sequence>
+      <xs:element name="parkingSpot" type="parkingSpotType" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="statusType">
+    <xs:sequence>
+      <xs:element name="value" type="valueType" minOccurs="1"/>
+      <xs:element name="timestamp" type="xs:dateTime" minOccurs="1"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:simpleType name="valueType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="free"/>
+      <xs:enumeration value="occupied"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="typeType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="ParkingSpot"/>
+      <xs:enumeration value="SpecialSpot"/>
+      <xs:enumeration value="MotoSpot"/>
+      <xs:enumeration value="BicycleSpot"/>
+      <xs:enumeration value="TeacherSpot"/>
+    </xs:restriction>
+  </xs:simpleType>
+</xs:schema>

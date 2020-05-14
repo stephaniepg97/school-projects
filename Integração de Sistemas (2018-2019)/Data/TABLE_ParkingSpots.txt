@@ -1,0 +1,20 @@
+USE [C:\USERS\STEPHANIE\DOCUMENTS\IS-PROJETO\PROJECT\SMARTPARK\SMARTPARK\APP_DATA\CAMPUSPARKDB.MDF]
+GO
+
+/****** Object: Table [dbo].[ParkingSpots] Script Date: 19-12-2018 17:35:33 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[ParkingSpots] (
+    [Id]            INT           IDENTITY (1, 1) NOT NULL,
+    [ParkId]        INT           NOT NULL,
+    [SpotId]        NVARCHAR (50) NOT NULL,
+    [Type]          NVARCHAR (50) NOT NULL,
+    [Status]        BIT           NOT NULL,
+    [Timestamp]     DATETIME      NOT NULL,
+    [BatteryStatus] BIT           NOT NULL,
+    [Location]      NVARCHAR (50) NOT NULL
+);

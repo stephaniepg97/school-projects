@@ -1,0 +1,96 @@
+C:\Users\2160863\Desktop\IS\IS-Projeto\Project\Admin Dashboard\bin\Debug\Admin Dashboard.exe.config
+C:\Users\2160863\Desktop\IS\IS-Projeto\Project\Admin Dashboard\bin\Debug\Admin Dashboard.exe
+C:\Users\2160863\Desktop\IS\IS-Projeto\Project\Admin Dashboard\bin\Debug\Admin Dashboard.pdb
+C:\Users\2160863\Desktop\IS\IS-Projeto\Project\Admin Dashboard\bin\Debug\RestSharp.dll
+C:\Users\2160863\Desktop\IS\IS-Projeto\Project\Admin Dashboard\bin\Debug\SmartPark.dll
+C:\Users\2160863\Desktop\IS\IS-Projeto\Project\Admin Dashboard\bin\Debug\System.Web.Http.dll
+C:\Users\2160863\Desktop\IS\IS-Projeto\Project\Admin Dashboard\bin\Debug\System.Web.Http.WebHost.dll
+C:\Users\2160863\Desktop\IS\IS-Projeto\Project\Admin Dashboard\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\2160863\Desktop\IS\IS-Projeto\Project\Admin Dashboard\bin\Debug\Newtonsoft.Json.dll
+C:\Users\2160863\Desktop\IS\IS-Projeto\Project\Admin Dashboard\bin\Debug\SmartPark.pdb
+C:\Users\2160863\Desktop\IS\IS-Projeto\Project\Admin Dashboard\bin\Debug\SmartPark.dll.config
+C:\Users\2160863\Desktop\IS\IS-Projeto\Project\Admin Dashboard\bin\Debug\RestSharp.xml
+C:\Users\2160863\Desktop\IS\IS-Projeto\Project\Admin Dashboard\bin\Debug\System.Web.Http.xml
+C:\Users\2160863\Desktop\IS\IS-Projeto\Project\Admin Dashboard\bin\Debug\System.Web.Http.WebHost.xml
+C:\Users\2160863\Desktop\IS\IS-Projeto\Project\Admin Dashboard\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\2160863\Desktop\IS\IS-Projeto\Project\Admin Dashboard\bin\Debug\Newtonsoft.Json.xml
+C:\Users\2160863\Desktop\IS\IS-Projeto\Project\Admin Dashboard\obj\Debug\Admin Dashboard.csprojAssemblyReference.cache
+C:\Users\2160863\Desktop\IS\IS-Projeto\Project\Admin Dashboard\obj\Debug\Admin_Dashboard.Form1.resources
+C:\Users\2160863\Desktop\IS\IS-Projeto\Project\Admin Dashboard\obj\Debug\Admin_Dashboard.Properties.Resources.resources
+C:\Users\2160863\Desktop\IS\IS-Projeto\Project\Admin Dashboard\obj\Debug\Admin Dashboard.csproj.GenerateResource.cache
+C:\Users\2160863\Desktop\IS\IS-Projeto\Project\Admin Dashboard\obj\Debug\Admin Dashboard.csproj.CoreCompileInputs.cache
+C:\Users\2160863\Desktop\IS\IS-Projeto\Project\Admin Dashboard\obj\Debug\Admin Dashboard.csproj.CopyComplete
+C:\Users\2160863\Desktop\IS\IS-Projeto\Project\Admin Dashboard\obj\Debug\Admin Dashboard.exe
+C:\Users\2160863\Desktop\IS\IS-Projeto\Project\Admin Dashboard\obj\Debug\Admin Dashboard.pdb
+C:\Users\asus\Desktop\IS-Projeto(2)\IS-Projeto\Project\Admin Dashboard\bin\Debug\Admin Dashboard.exe.config
+C:\Users\asus\Desktop\IS-Projeto(2)\IS-Projeto\Project\Admin Dashboard\bin\Debug\Admin Dashboard.exe
+C:\Users\asus\Desktop\IS-Projeto(2)\IS-Projeto\Project\Admin Dashboard\bin\Debug\Admin Dashboard.pdb
+C:\Users\asus\Desktop\IS-Projeto(2)\IS-Projeto\Project\Admin Dashboard\bin\Debug\RestSharp.dll
+C:\Users\asus\Desktop\IS-Projeto(2)\IS-Projeto\Project\Admin Dashboard\bin\Debug\SmartPark.dll
+C:\Users\asus\Desktop\IS-Projeto(2)\IS-Projeto\Project\Admin Dashboard\bin\Debug\System.Web.Http.dll
+C:\Users\asus\Desktop\IS-Projeto(2)\IS-Projeto\Project\Admin Dashboard\bin\Debug\System.Web.Http.WebHost.dll
+C:\Users\asus\Desktop\IS-Projeto(2)\IS-Projeto\Project\Admin Dashboard\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\asus\Desktop\IS-Projeto(2)\IS-Projeto\Project\Admin Dashboard\bin\Debug\Newtonsoft.Json.dll
+C:\Users\asus\Desktop\IS-Projeto(2)\IS-Projeto\Project\Admin Dashboard\bin\Debug\SmartPark.pdb
+C:\Users\asus\Desktop\IS-Projeto(2)\IS-Projeto\Project\Admin Dashboard\bin\Debug\SmartPark.dll.config
+C:\Users\asus\Desktop\IS-Projeto(2)\IS-Projeto\Project\Admin Dashboard\bin\Debug\RestSharp.xml
+C:\Users\asus\Desktop\IS-Projeto(2)\IS-Projeto\Project\Admin Dashboard\bin\Debug\System.Web.Http.xml
+C:\Users\asus\Desktop\IS-Projeto(2)\IS-Projeto\Project\Admin Dashboard\bin\Debug\System.Web.Http.WebHost.xml
+C:\Users\asus\Desktop\IS-Projeto(2)\IS-Projeto\Project\Admin Dashboard\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\asus\Desktop\IS-Projeto(2)\IS-Projeto\Project\Admin Dashboard\bin\Debug\Newtonsoft.Json.xml
+C:\Users\asus\Desktop\IS-Projeto(2)\IS-Projeto\Project\Admin Dashboard\obj\Debug\Admin Dashboard.csprojAssemblyReference.cache
+C:\Users\asus\Desktop\IS-Projeto(2)\IS-Projeto\Project\Admin Dashboard\obj\Debug\Admin_Dashboard.Form1.resources
+C:\Users\asus\Desktop\IS-Projeto(2)\IS-Projeto\Project\Admin Dashboard\obj\Debug\Admin_Dashboard.Properties.Resources.resources
+C:\Users\asus\Desktop\IS-Projeto(2)\IS-Projeto\Project\Admin Dashboard\obj\Debug\Admin Dashboard.csproj.GenerateResource.cache
+C:\Users\asus\Desktop\IS-Projeto(2)\IS-Projeto\Project\Admin Dashboard\obj\Debug\Admin Dashboard.csproj.CoreCompileInputs.cache
+C:\Users\asus\Desktop\IS-Projeto(2)\IS-Projeto\Project\Admin Dashboard\obj\Debug\Admin Dashboard.csproj.CopyComplete
+C:\Users\asus\Desktop\IS-Projeto(2)\IS-Projeto\Project\Admin Dashboard\obj\Debug\Admin Dashboard.exe
+C:\Users\asus\Desktop\IS-Projeto(2)\IS-Projeto\Project\Admin Dashboard\obj\Debug\Admin Dashboard.pdb
+C:\Users\asus\Desktop\Projeto\IS-Projeto\Project\Admin Dashboard\bin\Debug\Admin Dashboard.exe.config
+C:\Users\asus\Desktop\Projeto\IS-Projeto\Project\Admin Dashboard\bin\Debug\Admin Dashboard.exe
+C:\Users\asus\Desktop\Projeto\IS-Projeto\Project\Admin Dashboard\bin\Debug\Admin Dashboard.pdb
+C:\Users\asus\Desktop\Projeto\IS-Projeto\Project\Admin Dashboard\bin\Debug\RestSharp.dll
+C:\Users\asus\Desktop\Projeto\IS-Projeto\Project\Admin Dashboard\bin\Debug\SmartPark.dll
+C:\Users\asus\Desktop\Projeto\IS-Projeto\Project\Admin Dashboard\bin\Debug\System.Web.Http.dll
+C:\Users\asus\Desktop\Projeto\IS-Projeto\Project\Admin Dashboard\bin\Debug\System.Web.Http.WebHost.dll
+C:\Users\asus\Desktop\Projeto\IS-Projeto\Project\Admin Dashboard\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\asus\Desktop\Projeto\IS-Projeto\Project\Admin Dashboard\bin\Debug\Newtonsoft.Json.dll
+C:\Users\asus\Desktop\Projeto\IS-Projeto\Project\Admin Dashboard\bin\Debug\SmartPark.pdb
+C:\Users\asus\Desktop\Projeto\IS-Projeto\Project\Admin Dashboard\bin\Debug\SmartPark.dll.config
+C:\Users\asus\Desktop\Projeto\IS-Projeto\Project\Admin Dashboard\bin\Debug\RestSharp.xml
+C:\Users\asus\Desktop\Projeto\IS-Projeto\Project\Admin Dashboard\bin\Debug\System.Web.Http.xml
+C:\Users\asus\Desktop\Projeto\IS-Projeto\Project\Admin Dashboard\bin\Debug\System.Web.Http.WebHost.xml
+C:\Users\asus\Desktop\Projeto\IS-Projeto\Project\Admin Dashboard\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\asus\Desktop\Projeto\IS-Projeto\Project\Admin Dashboard\bin\Debug\Newtonsoft.Json.xml
+C:\Users\asus\Desktop\Projeto\IS-Projeto\Project\Admin Dashboard\obj\Debug\Admin Dashboard.csprojAssemblyReference.cache
+C:\Users\asus\Desktop\Projeto\IS-Projeto\Project\Admin Dashboard\obj\Debug\Admin_Dashboard.Form1.resources
+C:\Users\asus\Desktop\Projeto\IS-Projeto\Project\Admin Dashboard\obj\Debug\Admin_Dashboard.Properties.Resources.resources
+C:\Users\asus\Desktop\Projeto\IS-Projeto\Project\Admin Dashboard\obj\Debug\Admin Dashboard.csproj.GenerateResource.cache
+C:\Users\asus\Desktop\Projeto\IS-Projeto\Project\Admin Dashboard\obj\Debug\Admin Dashboard.csproj.CoreCompileInputs.cache
+C:\Users\asus\Desktop\Projeto\IS-Projeto\Project\Admin Dashboard\obj\Debug\Admin Dashboard.csproj.CopyComplete
+C:\Users\asus\Desktop\Projeto\IS-Projeto\Project\Admin Dashboard\obj\Debug\Admin Dashboard.exe
+C:\Users\asus\Desktop\Projeto\IS-Projeto\Project\Admin Dashboard\obj\Debug\Admin Dashboard.pdb
+E:\Ambiente de Trabalho\IPLeiria\Ano 3\Semestre 1\IS\Projeto\IS-Projeto\Project\Admin Dashboard\bin\Debug\Admin Dashboard.exe.config
+E:\Ambiente de Trabalho\IPLeiria\Ano 3\Semestre 1\IS\Projeto\IS-Projeto\Project\Admin Dashboard\bin\Debug\Admin Dashboard.exe
+E:\Ambiente de Trabalho\IPLeiria\Ano 3\Semestre 1\IS\Projeto\IS-Projeto\Project\Admin Dashboard\bin\Debug\Admin Dashboard.pdb
+E:\Ambiente de Trabalho\IPLeiria\Ano 3\Semestre 1\IS\Projeto\IS-Projeto\Project\Admin Dashboard\bin\Debug\RestSharp.dll
+E:\Ambiente de Trabalho\IPLeiria\Ano 3\Semestre 1\IS\Projeto\IS-Projeto\Project\Admin Dashboard\bin\Debug\SmartPark.dll
+E:\Ambiente de Trabalho\IPLeiria\Ano 3\Semestre 1\IS\Projeto\IS-Projeto\Project\Admin Dashboard\bin\Debug\System.Web.Http.dll
+E:\Ambiente de Trabalho\IPLeiria\Ano 3\Semestre 1\IS\Projeto\IS-Projeto\Project\Admin Dashboard\bin\Debug\System.Web.Http.WebHost.dll
+E:\Ambiente de Trabalho\IPLeiria\Ano 3\Semestre 1\IS\Projeto\IS-Projeto\Project\Admin Dashboard\bin\Debug\System.Net.Http.Formatting.dll
+E:\Ambiente de Trabalho\IPLeiria\Ano 3\Semestre 1\IS\Projeto\IS-Projeto\Project\Admin Dashboard\bin\Debug\Newtonsoft.Json.dll
+E:\Ambiente de Trabalho\IPLeiria\Ano 3\Semestre 1\IS\Projeto\IS-Projeto\Project\Admin Dashboard\bin\Debug\SmartPark.pdb
+E:\Ambiente de Trabalho\IPLeiria\Ano 3\Semestre 1\IS\Projeto\IS-Projeto\Project\Admin Dashboard\bin\Debug\SmartPark.dll.config
+E:\Ambiente de Trabalho\IPLeiria\Ano 3\Semestre 1\IS\Projeto\IS-Projeto\Project\Admin Dashboard\bin\Debug\RestSharp.xml
+E:\Ambiente de Trabalho\IPLeiria\Ano 3\Semestre 1\IS\Projeto\IS-Projeto\Project\Admin Dashboard\bin\Debug\System.Web.Http.xml
+E:\Ambiente de Trabalho\IPLeiria\Ano 3\Semestre 1\IS\Projeto\IS-Projeto\Project\Admin Dashboard\bin\Debug\System.Web.Http.WebHost.xml
+E:\Ambiente de Trabalho\IPLeiria\Ano 3\Semestre 1\IS\Projeto\IS-Projeto\Project\Admin Dashboard\bin\Debug\System.Net.Http.Formatting.xml
+E:\Ambiente de Trabalho\IPLeiria\Ano 3\Semestre 1\IS\Projeto\IS-Projeto\Project\Admin Dashboard\bin\Debug\Newtonsoft.Json.xml
+E:\Ambiente de Trabalho\IPLeiria\Ano 3\Semestre 1\IS\Projeto\IS-Projeto\Project\Admin Dashboard\obj\Debug\Admin Dashboard.csprojAssemblyReference.cache
+E:\Ambiente de Trabalho\IPLeiria\Ano 3\Semestre 1\IS\Projeto\IS-Projeto\Project\Admin Dashboard\obj\Debug\Admin_Dashboard.Form1.resources
+E:\Ambiente de Trabalho\IPLeiria\Ano 3\Semestre 1\IS\Projeto\IS-Projeto\Project\Admin Dashboard\obj\Debug\Admin_Dashboard.Properties.Resources.resources
+E:\Ambiente de Trabalho\IPLeiria\Ano 3\Semestre 1\IS\Projeto\IS-Projeto\Project\Admin Dashboard\obj\Debug\Admin Dashboard.csproj.GenerateResource.cache
+E:\Ambiente de Trabalho\IPLeiria\Ano 3\Semestre 1\IS\Projeto\IS-Projeto\Project\Admin Dashboard\obj\Debug\Admin Dashboard.csproj.CoreCompileInputs.cache
+E:\Ambiente de Trabalho\IPLeiria\Ano 3\Semestre 1\IS\Projeto\IS-Projeto\Project\Admin Dashboard\obj\Debug\Admin Dashboard.csproj.CopyComplete
+E:\Ambiente de Trabalho\IPLeiria\Ano 3\Semestre 1\IS\Projeto\IS-Projeto\Project\Admin Dashboard\obj\Debug\Admin Dashboard.exe
+E:\Ambiente de Trabalho\IPLeiria\Ano 3\Semestre 1\IS\Projeto\IS-Projeto\Project\Admin Dashboard\obj\Debug\Admin Dashboard.pdb

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="f8b2ef2f-2c5c-4404-8fe9-dcc8ba8bdf1c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:49325/ServiceParkingSpots.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServiceParkingSpots.xsd" MetadataType="Schema" ID="d3d30305-c2ab-49a1-a9ec-637458e4b90b" SourceId="1" SourceUrl="http://localhost:49325/ServiceParkingSpots.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServiceParkingSpots1.xsd" MetadataType="Schema" ID="8b2f0ddb-d036-4f58-a852-16b5103e8c7b" SourceId="1" SourceUrl="http://localhost:49325/ServiceParkingSpots.svc?xsd=xsd2" />
+    <MetadataFile FileName="ServiceParkingSpots.wsdl" MetadataType="Wsdl" ID="8ffc5ec9-932f-4c26-a6e7-e712197eafc6" SourceId="1" SourceUrl="http://localhost:49325/ServiceParkingSpots.svc?wsdl" />
+    <MetadataFile FileName="ServiceParkingSpots2.xsd" MetadataType="Schema" ID="8b21cb38-6e9b-4a59-818b-22505986e7e7" SourceId="1" SourceUrl="http://localhost:49325/ServiceParkingSpots.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServiceParkingSpots.disco" MetadataType="Disco" ID="8a40d846-4c0a-4c25-b240-0506a76a5ad7" SourceId="1" SourceUrl="http://localhost:49325/ServiceParkingSpots.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

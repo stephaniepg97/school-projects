@@ -1,0 +1,218 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Parking Spots API</title>
+    <meta charset="utf-8" />
+</head>
+<body>
+    <div>
+        <h2>
+            <font face="Verdana" color="green">Lista de todos os Parking Spots:</font> <br />
+        </h2>
+        <input id="buttonList1" type="button" value="Pesquisar" onclick="findAll();" />
+        <ul id="parkingSpots" />
+    </div>
+
+    <button type="button" onclick="showHide('parkingSpots', 'buttonList1')">Esconder/Mostrar lista de Parking Spots</button>
+
+    <div>
+        <h3>
+            <font face="Verdana" color="blue"> Informação detalhada de um Parking Spot com um ID específico</font> <br />
+        </h3>
+        <input type="text" id="parkingSpotsId" size="5" />
+        <input type="button" value="Pesquisar" onclick="find();" />
+        <p id="parkingSpot" />
+    </div>
+    <div>
+        <h3>
+            <font face="Verdana" color="blue"> Informação detalhada de vários Parking Spots num dado momento: </font> <br />
+        </h3>
+        <font face="Verdana" color="black"> TimeStamp: </font>
+        <input type="datetime" id="parkingSpotsTimeStamp" size="18" placeholder="yyyy-mm-ddThh:mi:ss" /> <br />
+        <input type="button" value="Pesquisar" onclick="findByTimeStamp();" />
+        <ul id="parkingSpotTimeStamp" />
+    </div>
+    <div>
+        <h3>
+            <font face="Verdana" color="blue">Lista de todos os Parking Spots num dado Período de Tempo:</font>
+        </h3>
+        <font face="Verdana" color="black"> TimeStamp Inicial: </font>
+        <input type="datetime" id="timeStampBegin" size="18" placeholder="yyyy-mm-ddThh:mi:ss" /> <br />
+        <font face="Verdana" color="black"> TimeStamp Final: </font>
+        <input type="datetime" id="timeStampEnd" size="18" placeholder="yyyy-mm-ddThh:mi:ss" />
+        <input type="button" value="Pesquisar" onclick="findByTimePeriod();" />
+        <ul id="parkingSpotPeriodTime" />
+    </div>
+    <div>
+        <h2>
+            <font face="Verdana" color="green">Lista de todos os Parking Spots com bateria fraca:</font> <br />
+        </h2>
+        <input id="buttonList2" type="button" value="Pesquisar" onclick="findByCriticalBatteryLevel();" />
+        <ul id="parkingSpotsCritic" />
+    </div>
+
+    <button type="button" onclick="showHide('parkingSpotsCritic', 'buttonList2')">Esconder/Mostrar lista de Parking Spots com bateria fraca</button>
+
+    <div>
+        <h3>
+            <font face="Verdana" color="blue">Lista de todos os Parking Spots com bateria fraca num dado período de tempo:</font>
+        </h3>
+        <font face="Verdana" color="black"> TimeStamp Inicial: </font>
+        <input type="datetime" id="timeStampBeginBattery" size="18" placeholder="yyyy-mm-ddThh:mi:ss" /> <br />
+        <font face="Verdana" color="black"> TimeStamp Final: </font>
+        <input type="datetime" id="timeStampEndBattery" size="18" placeholder="yyyy-mm-ddThh:mi:ss" />
+        <input id="buttonList3" type="button" value="Pesquisar" onclick="findByTimePeriodCriticalBatteryLevel();" />
+        <ul id="parkingSpotPeriodTimeBattery" />
+    </div>
+
+    <button type="button" onclick="showHide('parkingSpotPeriodTimeBattery', 'buttonList3')">Esconder/Mostrar lista de Parking Spots bateria fraca num dado período de tempo</button>
+
+    <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-2.1.4.min.js"></script>
+    <script>
+        var uri = 'http://localhost:49601/api';
+        $(document).ready(function () {
+            $.get(uri + '/parkingSpots')
+                .done(function (data) {
+                    alert(JSON.stringify(data)); //tá fixe
+                    // console.log(data);
+                    //ON SUCESS, 'data' contains a list of parkingSpots
+                })
+                .fail(function (jqxhr, textStatus, error) {
+                    var err = textStatus + ", " + error;
+                    alert("Request failed: " + err);
+                });
+        });
+
+        function formatItem1(item) {
+            return "ID: " + item.Id + ", Spot ID:  " + item.SpotId + "=> " + "Occupied? " + JSON.stringify(item.Status.Value);
+        }
+
+        function formatItemDetail(item) {
+            return "ID: " + item.Id + ", Spot ID: " + item.SpotId + ", Park ID: " + item.ParkId + ", Type: " + item.Type + ", Battery Status: " + item.BatteryStatus +
+                ", Location: " + item.Location + ", Status: " + JSON.stringify(item.Status.Value);
+        }
+
+        function formatItem(item) {
+            return "ID: " + item.Id + ", Spot ID: " + item.SpotId;
+        }
+
+        function showHide(el, button) {
+            var display = document.getElementById(el).style.display;
+            var button = document.getElementById(button);
+            if (display != "none")
+                document.getElementById(el).style.display = 'none';
+            else
+                document.getElementById(el).style.display = 'block';
+            button.disable = true;
+            button.value = 'INATIVO'
+            button.style.color = 'red';
+
+        }
+
+
+        function findAll() {
+            $('#parkingSpots').empty();
+
+            $.get(uri + '/parkingSpots')
+                .done(function (data) {
+                    $.each(data, function (key, item) {
+                        //ADD a list item for the parkingSpot
+                        $('<li>', { text: formatItem(item) }).appendTo($('#parkingSpots'));
+                    });
+                })
+                .fail(function (jqxhr, textStatus, error) {
+                    var err = textStatus + ", " + error;
+                    alert("Request failed: " + err);
+                });
+        }
+
+        function find() {
+            var id = $('#parkingSpotsId').val();
+            $.getJSON(uri + '/parkingSpots/' + id)
+                .done(function (data) {
+                    $.each(data, function (key, item) {
+                        //see the first item
+                        $('#parkingSpot').text(formatItemDetail(item));
+                    });
+                })
+                .fail(function (jqxhr, textStatus, error) {
+                    var err = textStatus2 + ", " + error;
+                    alert("request failed! : ", err);
+                });
+        }
+
+        function findByTimeStamp() {
+            var timeStamp = $('#parkingSpotsTimeStamp').val();
+            $('#parkingSpotTimeStamp').empty();
+
+            $.getJSON(uri + '/parkingSpots?timestamp=' + timeStamp)
+                .done(function (data) {
+                    $.each(data, function (key, item) {
+                        $('<li>', { text: formatItemDetail(item) }).appendTo($('#parkingSpotTimeStamp'));
+                    });
+
+                })
+                .fail(function (jqxhr, textStatus2, error) {
+                    var err = textStatus2 + ", " + error;
+                    alert("request failed! : ", err);
+                });
+        }
+
+        function findByTimePeriod() {
+            var begin = $('#timeStampBegin').val();
+            var end = $('#timeStampEnd').val();
+            $('#parkingSpotPeriodTime').empty();
+
+            $.getJSON(uri + '/parkingSpots?begin=' + begin + '&end=' + end)
+                .done(function (data) {
+                    $.each(data, function (key, item) {
+                        $('<li>', { text: formatItem1(item) }).appendTo($('#parkingSpotPeriodTime'));
+                    });
+
+                })
+                .fail(function (jqxhr, textStatus2, error) {
+                    var err = textStatus2 + ", " + error;
+                    alert("request failed! : ", err);
+                });
+        }
+
+        function findByTimePeriodCriticalBatteryLevel() {
+            var begin = $('#timeStampBeginBattery').val();
+            var end = $('#timeStampEndBattery').val();
+            $('#parkingSpotPeriodTimeBattery').empty();
+
+            $.getJSON(uri + '/parkingSpots?begin=' + begin + '&end=' + end + '&batteryStatus=false')
+                .done(function (data) {
+                    $.each(data, function (key, item) {
+                        $('<li>', { text: formatItem1(item) }).appendTo($('#parkingSpotPeriodTimeBattery'));
+                    });
+
+                })
+                .fail(function (jqxhr, textStatus2, error) {
+                    var err = textStatus2 + ", " + error;
+                    alert("request failed! : ", err);
+                });
+        }
+
+        function findByCriticalBatteryLevel() {
+
+            $.get(uri + '/parkingSpots?batteryStatus=false')
+                .done(function (data) {
+
+                    $.each(data, function (key, item) {
+                        //ADD a list item for the parkingSpot
+                        $('<li>', { text: formatItem(item) }).appendTo($('#parkingSpotsCritic'));
+                    });
+                })
+                .fail(function (jqxhr, textStatus, error) {
+                    var err = textStatus + ", " + error;
+                    alert("Request failed: " + err);
+                });
+
+        }
+    </script>
+    <br />
+    <br />
+    <a href="index.html">Voltar Atrás</a>
+</body>
+</html>

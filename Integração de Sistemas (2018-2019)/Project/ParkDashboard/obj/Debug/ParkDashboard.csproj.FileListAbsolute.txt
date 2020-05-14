@@ -1,0 +1,27 @@
+C:\Users\Stephanie\Documents\IS-Projeto\Project\ParkDashboard\bin\Debug\Admin Dashboard.exe.config
+C:\Users\Stephanie\Documents\IS-Projeto\Project\ParkDashboard\bin\Debug\Admin Dashboard.exe
+C:\Users\Stephanie\Documents\IS-Projeto\Project\ParkDashboard\bin\Debug\Admin Dashboard.pdb
+C:\Users\Stephanie\Documents\IS-Projeto\Project\ParkDashboard\bin\Debug\BOT-SpotSensor.dll
+C:\Users\Stephanie\Documents\IS-Projeto\Project\ParkDashboard\bin\Debug\RestSharp.dll
+C:\Users\Stephanie\Documents\IS-Projeto\Project\ParkDashboard\bin\Debug\SmartPark.dll
+C:\Users\Stephanie\Documents\IS-Projeto\Project\ParkDashboard\bin\Debug\System.Web.Http.dll
+C:\Users\Stephanie\Documents\IS-Projeto\Project\ParkDashboard\bin\Debug\System.Web.Http.WebHost.dll
+C:\Users\Stephanie\Documents\IS-Projeto\Project\ParkDashboard\bin\Debug\System.Net.Http.Formatting.dll
+C:\Users\Stephanie\Documents\IS-Projeto\Project\ParkDashboard\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Stephanie\Documents\IS-Projeto\Project\ParkDashboard\bin\Debug\BOT-SpotSensor.pdb
+C:\Users\Stephanie\Documents\IS-Projeto\Project\ParkDashboard\bin\Debug\BOT-SpotSensor.dll.config
+C:\Users\Stephanie\Documents\IS-Projeto\Project\ParkDashboard\bin\Debug\SmartPark.pdb
+C:\Users\Stephanie\Documents\IS-Projeto\Project\ParkDashboard\bin\Debug\SmartPark.dll.config
+C:\Users\Stephanie\Documents\IS-Projeto\Project\ParkDashboard\bin\Debug\RestSharp.xml
+C:\Users\Stephanie\Documents\IS-Projeto\Project\ParkDashboard\bin\Debug\System.Web.Http.xml
+C:\Users\Stephanie\Documents\IS-Projeto\Project\ParkDashboard\bin\Debug\System.Web.Http.WebHost.xml
+C:\Users\Stephanie\Documents\IS-Projeto\Project\ParkDashboard\bin\Debug\System.Net.Http.Formatting.xml
+C:\Users\Stephanie\Documents\IS-Projeto\Project\ParkDashboard\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Stephanie\Documents\IS-Projeto\Project\ParkDashboard\obj\Debug\ParkDashboard.csprojAssemblyReference.cache
+C:\Users\Stephanie\Documents\IS-Projeto\Project\ParkDashboard\obj\Debug\Admin_Dashboard.Form1.resources
+C:\Users\Stephanie\Documents\IS-Projeto\Project\ParkDashboard\obj\Debug\Admin_Dashboard.Properties.Resources.resources
+C:\Users\Stephanie\Documents\IS-Projeto\Project\ParkDashboard\obj\Debug\ParkDashboard.csproj.GenerateResource.cache
+C:\Users\Stephanie\Documents\IS-Projeto\Project\ParkDashboard\obj\Debug\ParkDashboard.csproj.CoreCompileInputs.cache
+C:\Users\Stephanie\Documents\IS-Projeto\Project\ParkDashboard\obj\Debug\ParkDashboard.csproj.CopyComplete
+C:\Users\Stephanie\Documents\IS-Projeto\Project\ParkDashboard\obj\Debug\Admin Dashboard.exe
+C:\Users\Stephanie\Documents\IS-Projeto\Project\ParkDashboard\obj\Debug\Admin Dashboard.pdb

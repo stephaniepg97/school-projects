@@ -1,0 +1,13 @@
+C:\Users\Stephanie\Documents\IS\BOT-SpotSensor\BOT-SpotSensor\bin\BOT-SpotSensor.dll.config
+C:\Users\Stephanie\Documents\IS\BOT-SpotSensor\BOT-SpotSensor\bin\BOT-SpotSensor.dll
+C:\Users\Stephanie\Documents\IS\BOT-SpotSensor\BOT-SpotSensor\bin\BOT-SpotSensor.pdb
+C:\Users\Stephanie\Documents\IS\BOT-SpotSensor\BOT-SpotSensor\obj\Debug\BOT-SpotSensor.csproj.CoreCompileInputs.cache
+C:\Users\Stephanie\Documents\IS\BOT-SpotSensor\BOT-SpotSensor\obj\Debug\BOT-SpotSensor.dll
+C:\Users\Stephanie\Documents\IS\BOT-SpotSensor\BOT-SpotSensor\obj\Debug\BOT-SpotSensor.pdb
+C:\Users\Stephanie\Documents\IS-Projeto\Project\BOT-SpotSensor\BOT-SpotSensor\bin\BOT-SpotSensor.dll.config
+C:\Users\Stephanie\Documents\IS-Projeto\Project\BOT-SpotSensor\BOT-SpotSensor\bin\BOT-SpotSensor.dll
+C:\Users\Stephanie\Documents\IS-Projeto\Project\BOT-SpotSensor\BOT-SpotSensor\bin\BOT-SpotSensor.pdb
+C:\Users\Stephanie\Documents\IS-Projeto\Project\BOT-SpotSensor\BOT-SpotSensor\obj\Debug\BOT-SpotSensor.csproj.CoreCompileInputs.cache
+C:\Users\Stephanie\Documents\IS-Projeto\Project\BOT-SpotSensor\BOT-SpotSensor\obj\Debug\BOT-SpotSensor.dll
+C:\Users\Stephanie\Documents\IS-Projeto\Project\BOT-SpotSensor\BOT-SpotSensor\obj\Debug\BOT-SpotSensor.pdb
+C:\Users\Stephanie\Documents\IS-Projeto\Project\BOT-SpotSensor\BOT-SpotSensor\obj\Debug\BOT-SpotSensor.csprojAssemblyReference.cache

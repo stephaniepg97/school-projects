@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="1e9c0670-cba6-4736-b635-e2d632b34816" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:49547/ServiceParkTransmissionUnit.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="ServiceParkTransmissionUnit.xsd" MetadataType="Schema" ID="23e92976-0a6e-43a5-a57b-e0c8566394cf" SourceId="1" SourceUrl="http://localhost:49547/ServiceParkTransmissionUnit.svc?xsd=xsd0" />
+    <MetadataFile FileName="ServiceParkTransmissionUnit.wsdl" MetadataType="Wsdl" ID="a221df1c-342c-4fbc-83a9-b02e1ddec7c9" SourceId="1" SourceUrl="http://localhost:49547/ServiceParkTransmissionUnit.svc?wsdl" />
+    <MetadataFile FileName="ServiceParkTransmissionUnit.disco" MetadataType="Disco" ID="9d99d26c-bc74-4ea0-bfac-04dd352dd998" SourceId="1" SourceUrl="http://localhost:49547/ServiceParkTransmissionUnit.svc?disco" />
+    <MetadataFile FileName="ServiceParkTransmissionUnit1.xsd" MetadataType="Schema" ID="24f55079-33ed-4f22-9d88-910efd1523cd" SourceId="1" SourceUrl="http://localhost:49547/ServiceParkTransmissionUnit.svc?xsd=xsd1" />
+    <MetadataFile FileName="ServiceParkTransmissionUnit2.xsd" MetadataType="Schema" ID="8f76b12d-36c8-4a89-9bf5-8e175d98cdb0" SourceId="1" SourceUrl="http://localhost:49547/ServiceParkTransmissionUnit.svc?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
