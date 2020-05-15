@@ -35,3 +35,9 @@ _ParkDashboard (Windows Application)_
 Ambiente gráfico do tipo Windows Form que monitoriza e configura Parks e Parking Spots existentes em toda a plataforma.
 
 <b>Tecnologias utilizadas: _.NET Framework; Visual Studio IDE; Open Source Message Broker Eclipse Mosquitto™ [mosquitto.org] que implementa o protocolo MQTT [mqtt.org/]_</b>
+
+# PFA (Personal Finances Assistant)
+
+No âmbito da disciplina curricular Aplicações para a Internet (2017-2018), foi desenvolvida uma Web Application (ou Platform) com o objetivo principal de ajudar os utilizadores a organizar as suas contas bancárias. A aplicação permite a criação de perfis públicos de utilizadores, com permissões de acesso a informação pessoal e privada das suas contas, histórico de movimentos realizados e respetiva análise de dados dos movimentos em tabelas e gráficos.
+
+<b>Tecnologias utilizadas: _Laravel Framework; PHP MVC; Bootstrap Framework; Chart.js library_</b>
