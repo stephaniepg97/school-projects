@@ -1,0 +1,41 @@
+1. Relações:
+
+- Email N : 1 User (substituído atributo "messages" na entity Athlete)
+
+- Product N : 1 Category
+
+- SportClass -> Modalidade Leccionada
+
+Coach:
+- Set<SportClass>
+
+SportClass
+- Coach
+- Timetable
+- Rank
+- Modality
+
+Athlete
+- Set<Registration>
+
+extends Product
+- SportClass
+- Graduation
+
+2. Criados métodos: toDTO, toDTOs, toEntity nos Bean's de cada entity
+
+3. Adicionado o método equals() em cada entity
+
+4. Refactoring de algumas classes da package dtos
+
+5. Atributos tageados com @NotNull em todas as entities
+
+7. Refactoring de algumas classes da package exceptions
+-------------------------------------------------------------------------------
+6. Season: na sport class
+
+10. Registration: products (SportClass e Graduation)
+
+NOTAS:
+- No momento da inscição, o associate/atleta só poderá se inscrever a sport classes com seasons de ano superior ou ingual ao atual
+- Products do athlete tem todas as sport classes de cada attendance do athlete

@@ -1,0 +1,80 @@
+### Get JWT token
+POST http://localhost:8080/DAE_Proj_war_exploded/api/login/token
+Content-Type: application/json
+
+{
+"username": "admin1",
+"password": "123"
+}
+###
+
+### Who am I?
+GET http://localhost:8080/DAE_Proj_war_exploded/api/login/claims
+Accept: application/json
+Authorization: Bearer eyJ0eXAiOiJqd3QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhZG1pbjEiLCJpc3MiOiJxdWlja3N0YXJ0LWp3dC1pc3N1ZXIiLCJhdWQiOiJqd3QtYXVkaWVuY2UiLCJncm91cHMiOlsiQWRtaW5pc3RyYXRvciJdLCJleHAiOjE1NzgxOTE3NTd9.Za_vWs377p_YiUff3l62mN8yE1I3qlevPQDL9_zq6YJdB9suwe6gM9g-PJKgbWM0fLLStlU2viJPA2zmRPA-e8szqqDIVFxzIm014NLIzZeCYxlBHHqbOZrg2Ogfe3Kum8CQb-Wk5zuajOubXtMp43CgLRlq2sEFyJLGjgMuiD2JxqtxCOdAaZ45ZuHIk3bemdA1jg8YIm3SgQwk17VqShJVWp8pkBrzoydLh4XDz-CcdZiwE13sFso5VxyYfab9GHZlG-1rr3RF8PZRxVe4yJuKX6_SMb5HVYvJeZKSFnhcSCL1QVBHTzQwfFE0dhDbFte_iMMHRhuxPAOYfryjqg
+###
+
+##### Get users list
+GET http://localhost:8080/DAE_Proj_war_exploded/api/users
+Accept: application/json
+Authorization: Bearer eyJ0eXAiOiJqd3QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhZG1pbjEiLCJpc3MiOiJxdWlja3N0YXJ0LWp3dC1pc3N1ZXIiLCJhdWQiOiJqd3QtYXVkaWVuY2UiLCJncm91cHMiOlsiQWRtaW5pc3RyYXRvciJdLCJleHAiOjE1NzQ1MzE5Nzl9.YEFd2gU2kxT7bvnolMr4nDc_OQZJraX1tdUVqz_h4qoJaQoz2G2VZABnprP0q4UMwii62B7IAlwWK0WCfJkXKV3zSwnW39NnFe0ifAgyvA7tkJJh0LmtK-GgBgyco9DCMDbiwi9l-_fn25JYrJib6sIklcgnDPgRFqbZFjpmuAJA6eIu6He6ftC0Twku5YaRucO4PcvvC_janZtGQqiruVqBDoJkumpqhCPx_qM6XT6Ks2rhOzdy2zO8MztyRv9-zpHYSR8ApHkvbWHlott9ka1VKzHnAY3grnXxmfGkABNTUqMB_FR7gAAcagc6AYmae8J7VSs9CiXmI4SEXXZ25g
+###
+
+### Get a modality’s details
+GET http://localhost:8080/DAE_Proj_war_exploded/api/modalities/2
+Accept: application/json
+Authorization: Bearer eyJ0eXAiOiJqd3QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhZG1pbjEiLCJpc3MiOiJxdWlja3N0YXJ0LWp3dC1pc3N1ZXIiLCJhdWQiOiJqd3QtYXVkaWVuY2UiLCJncm91cHMiOlsiQWRtaW5pc3RyYXRvciJdLCJleHAiOjE1NzgwNjMxNDN9.Ld3pe-4LIaeLyY4cNymhQsZGNhpUAXoV8Ifo_17eNK4CaPcdncYwEkGdGWgjs0z4BGsqKiLcdx3e8x7WvonmldVaxk65CM2JCPTo1-dvVNdd-kDPWnMbww6hYW25qNqsCFkooy16Ig5Y9MMjJ5Zjw8R6WGI72DJInpZlx-yLLWWT6WzZM34vMdhBSV3ROMr74DoXcFTZUgdi7cOB75IZUC3AFJh6yncyGkWvcsJNMY_GCD0nyPtUIDCVdjgn_KmmBP8ErHSiDuvOMR55g6IlGYTBpNbVdqgSDFU54cwyD2-r-xoWui4rkXUmZZo5I0hh7PUZUOJFQlHrwq5NzPHvAg
+###
+
+### Get a modality’s classes
+GET http://localhost:8080/DAE_Proj_war_exploded/api/modalities/2/classes
+Accept: application/json
+Authorization: Bearer eyJ0eXAiOiJqd3QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhZG1pbjEiLCJpc3MiOiJxdWlja3N0YXJ0LWp3dC1pc3N1ZXIiLCJhdWQiOiJqd3QtYXVkaWVuY2UiLCJncm91cHMiOlsiQWRtaW5pc3RyYXRvciJdLCJleHAiOjE1NzgwNjMxNDN9.Ld3pe-4LIaeLyY4cNymhQsZGNhpUAXoV8Ifo_17eNK4CaPcdncYwEkGdGWgjs0z4BGsqKiLcdx3e8x7WvonmldVaxk65CM2JCPTo1-dvVNdd-kDPWnMbww6hYW25qNqsCFkooy16Ig5Y9MMjJ5Zjw8R6WGI72DJInpZlx-yLLWWT6WzZM34vMdhBSV3ROMr74DoXcFTZUgdi7cOB75IZUC3AFJh6yncyGkWvcsJNMY_GCD0nyPtUIDCVdjgn_KmmBP8ErHSiDuvOMR55g6IlGYTBpNbVdqgSDFU54cwyD2-r-xoWui4rkXUmZZo5I0hh7PUZUOJFQlHrwq5NzPHvAg
+###
+
+### Get a modality’s graduations
+GET http://localhost:8080/DAE_Proj_war_exploded/api/modalities/2/graduations
+Accept: application/json
+Authorization: Bearer eyJ0eXAiOiJqd3QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhZG1pbjEiLCJpc3MiOiJxdWlja3N0YXJ0LWp3dC1pc3N1ZXIiLCJhdWQiOiJqd3QtYXVkaWVuY2UiLCJncm91cHMiOlsiQWRtaW5pc3RyYXRvciJdLCJleHAiOjE1NzgwNjMxNDN9.Ld3pe-4LIaeLyY4cNymhQsZGNhpUAXoV8Ifo_17eNK4CaPcdncYwEkGdGWgjs0z4BGsqKiLcdx3e8x7WvonmldVaxk65CM2JCPTo1-dvVNdd-kDPWnMbww6hYW25qNqsCFkooy16Ig5Y9MMjJ5Zjw8R6WGI72DJInpZlx-yLLWWT6WzZM34vMdhBSV3ROMr74DoXcFTZUgdi7cOB75IZUC3AFJh6yncyGkWvcsJNMY_GCD0nyPtUIDCVdjgn_KmmBP8ErHSiDuvOMR55g6IlGYTBpNbVdqgSDFU54cwyD2-r-xoWui4rkXUmZZo5I0hh7PUZUOJFQlHrwq5NzPHvAg
+###
+
+### Send email
+POST http://localhost:8080/DAE_Proj_war_exploded/api/users/admin1/email/send
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJqd3QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhZG1pbjEiLCJpc3MiOiJxdWlja3N0YXJ0LWp3dC1pc3N1ZXIiLCJhdWQiOiJqd3QtYXVkaWVuY2UiLCJncm91cHMiOlsiQWRtaW5pc3RyYXRvciJdLCJleHAiOjE1NzgxOTE3NTd9.Za_vWs377p_YiUff3l62mN8yE1I3qlevPQDL9_zq6YJdB9suwe6gM9g-PJKgbWM0fLLStlU2viJPA2zmRPA-e8szqqDIVFxzIm014NLIzZeCYxlBHHqbOZrg2Ogfe3Kum8CQb-Wk5zuajOubXtMp43CgLRlq2sEFyJLGjgMuiD2JxqtxCOdAaZ45ZuHIk3bemdA1jg8YIm3SgQwk17VqShJVWp8pkBrzoydLh4XDz-CcdZiwE13sFso5VxyYfab9GHZlG-1rr3RF8PZRxVe4yJuKX6_SMb5HVYvJeZKSFnhcSCL1QVBHTzQwfFE0dhDbFte_iMMHRhuxPAOYfryjqg
+
+{
+  "user":
+  {
+    "username": "admin1",
+    "email": "sudo@mail.pt",
+    "password": "123",
+    "name": "admin1"
+  },
+"subject": "New message",
+"message": "Message. Bye."
+}
+###
+
+### Create new user
+POST http://localhost:8080/DAE_Proj_war_exploded/api/users
+Content-Type: application/json
+Authorization: Bearer eyJ0eXAiOiJqd3QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJhZG1pbjEiLCJpc3MiOiJxdWlja3N0YXJ0LWp3dC1pc3N1ZXIiLCJhdWQiOiJqd3QtYXVkaWVuY2UiLCJncm91cHMiOlsiQWRtaW5pc3RyYXRvciJdLCJleHAiOjE1NzQ1MzE5Nzl9.YEFd2gU2kxT7bvnolMr4nDc_OQZJraX1tdUVqz_h4qoJaQoz2G2VZABnprP0q4UMwii62B7IAlwWK0WCfJkXKV3zSwnW39NnFe0ifAgyvA7tkJJh0LmtK-GgBgyco9DCMDbiwi9l-_fn25JYrJib6sIklcgnDPgRFqbZFjpmuAJA6eIu6He6ftC0Twku5YaRucO4PcvvC_janZtGQqiruVqBDoJkumpqhCPx_qM6XT6Ks2rhOzdy2zO8MztyRv9-zpHYSR8ApHkvbWHlott9ka1VKzHnAY3grnXxmfGkABNTUqMB_FR7gAAcagc6AYmae8J7VSs9CiXmI4SEXXZ25g
+
+{
+ "email": "dae.ei.ipleiria@gmail.com",
+ "name": "Jane Doe",
+ "username": "1234567",
+ "password": "aaaaa",
+ "courseCode":"1",
+ "courseName": "EI"
+}
+###
+
+### Delete user - run after the previous POST
+DELETE http://localhost:8080/DAE_Proj_war_exploded/api/users/admin1
+Accept: application/json
+Authorization: Bearer eyJ0eXAiOiJqd3QiLCJhbGciOiJSUzI1NiJ9.eyJzdWIiOiJ0ZWFjaGVyIiwiaXNzIjoicXVpY2tzdGFydC1qd3QtaXNzdWVyIiwiYXVkIjoiand0LWF1ZGllbmNlIiwiZ3JvdXBzIjpbIlRlYWNoZXIiXSwiZXhwIjoxNTc0MDI0NTY3fQ.NsiT664GSXk_3me8_H5E0arZnbOJIwLI_9F-YpI9zdZqniDElgbP-d-yBpqK3mCKjBh6mqaMeNWcquFvLCl8AIZ8WrEypRuHQWrRVpRDzvdRdx4n2UwGk2l6xx-OIfxm3F4ldCHwGvH5SulcACVgVd7MVkb_vOBJmJRWYTwnKYiER6vJFud_LWSVH2NccYU80nYezxcDFSgl6DViiFfM4sNrFAf9PM9Ej-H5rgnmEv-PNXVVErMPLI6mSIWTuz4MFD115dQlK5r_7xjrK_RPhmvZ2wO1DquAYpeoRNh6ntaWWDE-a_Sh9aNbuBVGLDjD349qIS3yyz9qUf_bG0aytQ
+###
+
+
