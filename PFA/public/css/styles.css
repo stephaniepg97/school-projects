@@ -1,0 +1,31 @@
+table {
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+	padding:0; 
+	margin:0;
+	border-collapse: collapse;
+}
+
+td,th {
+	border-style: solid;
+	border-color: black;
+	border-width: 1px;
+	padding-left: 4px;
+	padding-right: 4px;
+}
+
+a:link {
+	color: white;
+}
+
+td form input[type="submit"]{
+    background: none;
+    border: none;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+    font-family: "Times";
+    font-size: 16px;
+}
+
