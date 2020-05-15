@@ -3,8 +3,7 @@
 No âmbito da discipilina curricular Sistemas Gráficos e Interação (2017-2018), foi desenvolvida uma proposta de interface, através do desenvolvimento de um Protótipo de Alta Fidelidade (PAF) funcional, para o site do curso de Engenharia Informática da Escola Superior de Tecnologia e Gestão do Instituto Politécnico de Leiria (ESTG-IPLeiria). 
 Para a implementação do PAF, foi utilizada a ferramenta Blender para recorrer a técnicas de modelação e animação 3D e capacitar interatividade necessária para simular as funcionalidades do protótipo.
 
-Tecnologias utilizadas: 
-. Blender
+Tecnologias utilizadas: _<b>Blender</b>_
 
 # CampusPark
 
