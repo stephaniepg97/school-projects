@@ -3,7 +3,7 @@
 No âmbito da discipilina curricular Sistemas Gráficos e Interação (2017-2018), foi desenvolvida uma proposta de interface, através do desenvolvimento de um Protótipo de Alta Fidelidade (PAF) funcional, para o site do curso de Engenharia Informática da Escola Superior de Tecnologia e Gestão do Instituto Politécnico de Leiria (ESTG-IPLeiria). 
 Para a implementação do PAF, foi utilizada a ferramenta Blender para recorrer a técnicas de modelação e animação 3D e capacitar interatividade necessária para simular as funcionalidades do protótipo.
 
-Tecnologias utilizadas: _<b>Blender</b>_
+<b>Tecnologias utilizadas: _Blender_</b>
 
 # CampusPark
 
@@ -30,6 +30,8 @@ _SmartPark (RESTful Web Service)_
 
 RESTful web service disponível a dispositivos móveis e utilizadores finais.
 
-_ParkDashboard # Windows Application_
+_ParkDashboard (Windows Application)_
 
 Ambiente gráfico do tipo Windows Form que monitoriza e configura Parks e Parking Spots existentes em toda a plataforma.
+
+<b>Tecnologias utilizadas: _.NET Framework; Visual Studio IDE_</b>
