@@ -26,12 +26,12 @@ _ParkSS (Console Application)_
 
 Linha de consola que automatiza a receção de dados fornecidos pelo ParkTU (o conteúdo XML do ficheiro parks.xml) e os armazena numa database relacional (ParkDB);
 
-_SmartPark (RESTful Web Service)_
+_SmartPark (ASP.NET Web Application)_
 
-RESTful web service disponível a dispositivos móveis e utilizadores finais.
+_RESTful Web Service_ disponível a dispositivos móveis e utilizadores finais.
 
 _ParkDashboard (Windows Application)_
 
 Ambiente gráfico do tipo Windows Form que monitoriza e configura Parks e Parking Spots existentes em toda a plataforma.
 
-<b>Tecnologias utilizadas: _.NET Framework; Visual Studio IDE_</b>
+<b>Tecnologias utilizadas: _.NET Framework (Console Application, ASP.NET Web Application, Windows Application, WCF Service Application); Visual Studio IDE_</b>
