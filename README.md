@@ -34,4 +34,4 @@ _ParkDashboard (Windows Application)_
 
 Ambiente gráfico do tipo Windows Form que monitoriza e configura Parks e Parking Spots existentes em toda a plataforma.
 
-<b>Tecnologias utilizadas: _.NET Framework (Console Application, ASP.NET Web Application, Windows Application, WCF Service Application); Visual Studio IDE_</b>
+<b>Tecnologias utilizadas: _.NET Framework (Console Application, ASP.NET Web Application, Windows Application, WCF Service Application); Visual Studio IDE_; Open source Message Broker Eclipse Mosquitto™ [mosquitto.org] que implementa o protocolo MQTT [mqtt.org/]</b>
